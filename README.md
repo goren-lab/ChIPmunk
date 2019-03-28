@@ -29,7 +29,7 @@ make install
 ``` 
 
 If you do not have root access, you can set `--prefix=$HOME`, which will install `chipmunk` to `~/bin/chipmunk`.
-If you get a pkg-config error, you may need to set PKG_CONFIG_PATH to a directory where it kind find `htslib.pc`.
+If you get a pkg-config error, you may need to set PKG_CONFIG_PATH to a directory where it can find `htslib.pc`.
 
 Typing `chipmunk --help` should show a help message if ChIPmunk was successfully installed.
 
@@ -96,7 +96,7 @@ Optional parameters:
 Required parameters:
 * `-p <peaks>`: file containing peaks. 
 * `-t <homer|bed>`: Specify the format of the peaks file. Options are "bed" or "homer".
-* `-f <ref.fa>`: Reference genome fasta file. Must be indexed (e.g. `samtools faidx <ref.fa>`)
+* `-f <ref.fa>`: Reference genome fasta file. Must be indexed (e.g., `samtools faidx <ref.fa>`)
 * `-o <outprefix>`: Prefix to name output files. Outputs `<outprefix>.fastq` for single-end data or `<outprefix>_1.fastq` and `<outprefix>_2.fastq` for paired-end data.
 
 Experiment parameters:
